@@ -3,13 +3,50 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ThomasXVII | Computer Science ePortfolio</title>
+  <title>Michael Thomas | Computer Science ePortfolio</title>
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+      background-color: #f4f4f4;
+    }
+    h1, h2, h3 {
+      color: #333;
+    }
+    .container {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .toc {
+      margin-bottom: 30px;
+    }
+    .toc select {
+      font-size: 16px;
+      padding: 5px;
+    }
+    img.placeholder {
+      width: 100%;
+      height: 300px;
+      background-color: #ccc;
+      margin: 20px 0;
+      display: block;
+    }
+  </style>
+  <script>
+    function goToSection(id) {
+      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
 </head>
 <body>
   <header>
-    <h1>ThomasXVII</h1>
+    <h1>Michael Thomas CS 499 Capstone</h1>
     <h2>Computer Science ePortfolio</h2>
+    <h3>Table of Contents</h3>
     <nav>
       <ul>
         <li><a href="#self-assessment">Professional Self-Assessment</a></li>
@@ -20,85 +57,61 @@
     </nav>
   </header>
 
-  <main>
+  <body>
+  <div class="container">
+    <h1>Michael Thomas' Computer Science ePortfolio</h1>
+
+    <div class="toc">
+      <label for="sections">Jump to Section:</label>
+      <select id="sections" onchange="goToSection(this.value)">
+        <option value="self-assessment">Professional Self-Assessment</option>
+        <option value="code-review">Code Review & Enhancement Plan</option>
+        <option value="artifact1">Software Design & Engineering</option>
+        <option value="artifact2">Algorithms & Data Structures</option>
+        <option value="artifact3">Databases</option>
+      </select>
+    </div>
+
     <section id="self-assessment">
       <h2>Professional Self-Assessment</h2>
-      <p>
-        Completing the Computer Science program has allowed me to develop a wide range of technical and professional skills that I’ve showcased throughout this ePortfolio. The experience of compiling this portfolio has helped me clearly define my strengths in algorithm design, full-stack programming, and systems analysis, and has reinforced my passion for working independently before moving to collaborative environments.
-      </p>
-      <p>
-        My coursework has strengthened my ability to work in team settings, such as in collaborative assignments and peer review discussions. It also helped me refine how I communicate technically with different audiences, including peers, instructors, and potential stakeholders. I’ve used industry-standard tools and practices—like GitHub, agile principles, and version control—which I’ve carried into the work showcased here.
-      </p>
-      <p>
-        The artifacts you’ll see reflect my skills in data structures, algorithms, software engineering, security-aware development, and database management. My interests in solo development and practical problem-solving guided my artifact enhancements, allowing me to explore design trade-offs, efficient solutions, and secure, scalable implementations. Together, these artifacts represent the complete story of my growth as a developer ready to join the professional field.
-      </p>
-      <p>
-        <strong>Screenshot Placeholder:</strong><br />
-        <code>&lt;img src="self-assessment-screenshot.jpg" alt="Self Assessment Screenshot" /&gt;</code>
-      </p>
-    </section>
-
-    <section id="artifacts">
-      <h2>Artifacts</h2>
-
-      <article>
-        <h3>Artifact 1: Algorithm Optimization</h3>
-        <p>
-          This artifact demonstrates an enhancement to a pathfinding system. I reworked the logic to reduce processing time using A* and binary heaps. It reflects a deeper understanding of data structures and design trade-offs.
-        </p>
-        <ul>
-          <li><strong>Course Outcomes Met:</strong> 2, 3, 4</li>
-          <li><strong>Category:</strong> Algorithms and Data Structures</li>
-          <li><strong>GitHub Link:</strong> <a href="https://github.com/thomasxvii/artifact2">View Code</a></li>
-        </ul>
-        <p><strong>Screenshot Placeholder:</strong><br />
-        <code>&lt;img src="artifact2-screenshot.jpg" alt="Algorithm Optimization Screenshot" /&gt;</code></p>
-      </article>
-
-      <article>
-        <h3>Artifact 2: MongoDB/Node Full-Stack Application</h3>
-        <p>
-          This artifact features a full-stack web app using Node.js and MongoDB. I enhanced the original project by implementing form validation, token-based authentication, and RESTful API endpoints.
-        </p>
-        <ul>
-          <li><strong>Course Outcomes Met:</strong> 2, 4, 5</li>
-          <li><strong>Category:</strong> Databases</li>
-          <li><strong>GitHub Link:</strong> <a href="https://github.com/thomasxvii/artifact3">View Code</a></li>
-        </ul>
-        <p><strong>Screenshot Placeholder:</strong><br />
-        <code>&lt;img src="artifact3-screenshot.jpg" alt="MongoDB Project Screenshot" /&gt;</code></p>
-      </article>
+      <p>My journey through the Computer Science program at SNHU culminated in numerous artifacts that showcase both my technical ability and my professional growth. One of the most significant project experiences I had was working collaboratively with a group of SNHU students to develop a third-person racing game called <strong>Sugar Rush</strong> using Unreal Engine. In this project, I was responsible for level design and world-building, tasks that challenged me to think creatively and work within technical constraints. This experience emphasized my interest in both game development and frontend/mobile design, ultimately shaping my career aspirations.</p>
+      <p>As a result of this journey, I am currently focused on pursuing opportunities in indie game development, software engineering, and front-end/mobile development. The reflections I captured in my weekly journals throughout the course offer further insight into my evolving mindset, challenges I overcame, and the lessons I’ve applied across various disciplines. These journals reflect on career goals, the importance of ePortfolios, emerging technology, and trends in computer science.</p>
+      <p><a href="https://sirrell.itch.io/sugar-rush" target="_blank">Sugar Rush Project</a></p>
+      <img src="PLACEHOLDER_IMAGE_URL" alt="Sugar Rush Screenshot" class="placeholder">
     </section>
 
     <section id="code-review">
-      <h2>Code Review Video</h2>
-      <p>
-        In this informal code review, I walk through the original functionality of my primary artifact, outline areas needing improvement, and explain the specific enhancements I planned. I focus on algorithmic structure, data validation, and backend security.
-      </p>
-      <p><strong>Code Review Link:</strong> <a href="https://www.youtube.com/watch?v=yourcodereview">Watch Code Review</a></p>
-      <p><strong>Screenshot Placeholder:</strong><br />
-        <code>&lt;img src="code-review-screenshot.jpg" alt="Code Review Screenshot" /&gt;</code></p>
+      <h2>Code Review & Enhancement Plan</h2>
+      <p>My code review process provided the foundation for thoughtful artifact enhancements. This began with the development of an <strong>enhancement plan</strong> that clearly identified opportunities for improvement across each category: Software Engineering, Algorithms & Data Structures, and Databases.</p>
+      <p>As documented in my code review video and accompanying journal, I used tools such as OBS Studio to visually demonstrate the deficiencies and enhancements of each code artifact. In addition to discussing software practices like Object-Oriented Programming, Test-Driven Development, and efficiency improvements, I reviewed the artifacts in terms of functionality, readability, maintainability, and performance.</p>
+      <p>The accompanying journals describe the significance of code review as an industry practice and lay out best practices that I followed, such as conducting focused reviews of small code segments, setting clear expectations, and maintaining clean, well-commented codebases. This foundation allowed me to thoughtfully refactor and improve all artifacts in meaningful, measurable ways.</p>
+      <p><a href="https://youtu.be/ylHAz0zElCw" target="_blank">Watch the Code Review Video</a></p>
+      <img src="PLACEHOLDER_IMAGE_URL" alt="Code Review Screenshot" class="placeholder">
     </section>
 
-    <section id="reflections">
-      <h2>Artifact Narratives</h2>
-
-      <article>
-        <h3>Reflection: Algorithm Optimization</h3>
-        <p>
-          This artifact reflects my growing understanding of algorithmic complexity. While implementing the A* algorithm, I faced challenges in performance tuning, which required a deeper dive into data structure selection. Peer feedback was helpful in identifying inefficiencies, which I corrected by restructuring the loop logic and optimizing memory usage. This enhancement directly supported my grasp of outcomes 2, 3, and 4.
-        </p>
-      </article>
-
-      <article>
-        <h3>Reflection: Full-Stack MongoDB Application</h3>
-        <p>
-          Enhancing this artifact helped me become comfortable with the MERN stack. I focused on improving backend security and data integrity. I learned how to secure APIs, handle user data safely, and provide a clean front-end experience. Incorporating security mindset principles made me much more confident in deploying full-stack applications. This artifact supported my achievement of outcomes 2, 4, and 5.
-        </p>
-      </article>
+    <section id="artifact1">
+      <h2>Artifact One: Software Design & Engineering</h2>
+      <p>This artifact is the <strong>Appointment Service</strong> project originally created in CS 320. It began as a Java-based task-tracking app and evolved into a refactored Python application using OOP and robust unit testing with Pytest. This transition not only improved the readability and extensibility of the code but also introduced modern practices like exception handling and data validation. These changes increased its reliability and made it more professional in design.</p>
+      <p>The accompanying narrative explains my motivation for selecting this artifact and details the enhancement process, including the reorganization of class logic and the integration of test coverage for each method.</p>
+      <img src="PLACEHOLDER_IMAGE_URL" alt="Appointment Service Screenshot" class="placeholder">
     </section>
-  </main>
 
+    <section id="artifact2">
+      <h2>Artifact Two: Algorithms & Data Structures</h2>
+      <p>The <strong>Contact Service</strong> project, also from CS 320, originally implemented a linear ArrayList for managing contacts. The enhanced version replaces this with a HashMap (dictionary), which allows for constant-time lookup, simplifies logic for updating and deleting records, and ensures data integrity through duplicate prevention and improved validation. These changes significantly boost performance and reduce redundancy.</p>
+      <p>Through this enhancement, I demonstrated the impact of appropriate data structure selection and algorithmic improvements in real-world development scenarios. The narrative included outlines these modifications and how they met the course outcomes for performance and structure.</p>
+      <img src="PLACEHOLDER_IMAGE_URL" alt="Contact Service Screenshot" class="placeholder">
+    </section>
+
+    <section id="artifact3">
+      <h2>Artifact Three: Databases</h2>
+      <p>The <strong>Grazioso Salvare</strong> project, originally developed in IT 145, was enhanced by transitioning from flat file-based storage to a normalized SQLite relational database. This not only provided persistent storage but also introduced secure parameterized queries and a modular code structure that improved both functionality and scalability.</p>
+      <p>By creating modules such as <code>database.py</code>, <code>models.py</code>, and <code>main.py</code>, I adhered to separation of concerns and clean architecture principles. These updates reflect my grasp of secure and scalable data design and the importance of integrating database systems into real-world applications. The supporting narrative outlines the database schema design, security considerations, and testing practices.</p>
+      <img src="PLACEHOLDER_IMAGE_URL" alt="Grazioso Salvare Screenshot" class="placeholder">
+    </section>
+  </div>
+</body>
+  
   <footer>
     <p>Copyright &copy; 2025 ThomasXVII | <a href="https://github.com/thomasxvii">GitHub</a></p>
   </footer>
