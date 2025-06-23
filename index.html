@@ -6,31 +6,49 @@
   <title>Michael Thomas | SNHU CS 499 Computer Science ePortfolio</title>
   <link rel="stylesheet" href="styles.css" />
   <style>
-     body {
+    body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background: #f9f9f9;
+      background: #b3e0dc;
       color: #333;
     }
-    
+
+    header {
+      background-color: #f5f5dd;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
     h1, h2, h3 {
       color: #222;
     }
-    
+
     .container {
       max-width: 900px;
       margin: 0 auto;
       padding: 20px;
       background-color: #fff;
     }
-    
-     nav {
+
+    nav {
       margin-bottom: 20px;
     }
+
+    nav ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    nav li {
+      margin: 8px 0;
+    }
+
     nav a {
-      display: block;
-      padding: 8px 0;
       color: #0077cc;
       text-decoration: none;
     }
@@ -75,6 +93,18 @@
     .toc h2 {
       margin-top: 0;
     }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #f5f5dd;
+      margin-top: 40px;
+    }
+
+    footer a {
+      color: #0077cc;
+      text-decoration: none;
+    }
   </style>
   <script>
     function goToSection(id) {
@@ -82,72 +112,38 @@
     }
   </script>
 </head>
-  
+
 <body>
   <header>
-    <h1>Michael Thomas SNHU CS 499 Capstone</h1>
+    <h1>Computer Science ePortfolio</h1>
   </header>
 
   <div class="container">
-    <h2>Computer Science ePortfolio</h2>
-  
-  <div class="toc">
-    <h2>Table of Contents</h2>
-    <nav>
-      <li><a href="#self-assessment">Professional Self-Assessment</a></li>
-      <li><a href="#code-review">Code Review & Enhancement Planning</a></li>
-      <li><a href="#design-enhancement">Software Design and Engineering Enhancement</a></li>
-      <li><a href="#algorithm-enhancement">Algorithms and Data Structure Enhancement</a></li>
-      <li><a href="#database-enhancement">Databases Enhancement</a></li>
-      <li><a href="#journals">Journals</a></li>
-    </nav>
-  </div>
+    <h2>Michael Thomas SNHU CS 499 Capstone</h2>
 
-    <section id="self-assessment">
-      <h2>Professional Self-Assessment</h2>
+    <div class="toc">
+      <h2>Table of Contents</h2>
+      <nav>
+        <ul>
+          <li><a href="#self-assessment">Professional Self-Assessment</a></li>
+          <li><a href="#journals">Journals</a></li>
+          <li><a href="#code-review">Code Review & Enhancement Planning</a></li>
+          <li><a href="#design-enhancement">Software Design and Engineering Enhancement</a></li>
+          <li><a href="#algorithm-enhancement">Algorithms and Data Structure Enhancement</a></li>
+          <li><a href="#database-enhancement">Databases Enhancement</a></li>
+        </ul>
+      </nav>
+    </div>
+
+  <section id="self-assessment">
+    <h2>Professional Self-Assessment</h2>
+      <p>Hello! My name is Michael Thomas and I am close to completed with my Bachelor's Degree in Computer Science. I have been in the SNHU program for over two years, starting originally in the Fall of 2022. Some of my favorite coursework and concepts learned thus far include Front-end/Back-end Development, Systems Architecture, and Iterative Design. Prior to my time in school I had little knowledge of the structures behind software development and computer systems, but I have always had an itching curiosity.</p>
       <p>My journey through the Computer Science program at SNHU culminated in numerous artifacts that showcase both my technical ability and my professional growth. One of the most significant project experiences I had was working collaboratively with a group of SNHU students to develop a third-person racing game called <a href="https://sirrell.itch.io/sugar-rush" target="_blank">Sugar Rush</a> using Unreal Engine. In this project, I was responsible for level design and world-building, tasks that challenged me to think creatively and work within technical constraints. This experience emphasized my interest in both game development and frontend/mobile design, ultimately shaping my career aspirations.</p>
-      <p>As a result of this journey, I am currently focused on pursuing opportunities in indie game development, software engineering, and front-end/mobile development. The reflections I captured in my weekly journals throughout the course offer further insight into my evolving mindset, challenges I overcame, and the lessons I’ve applied across various disciplines. These journals reflect on career goals, the importance of ePortfolios, emerging technology, and trends in computer science.</p>
       <img src="Screenshots/Sugar Rush Title Screen.png" alt="Sugar Rush Screenshot">
-    </section>
-
-    <section id="code-review">
-      <h2>Code Review & Enhancement Plan</h2>
-      <p>My code review process provided the foundation for thoughtful artifact enhancements. This began with the development of an <strong>enhancement plan</strong> that clearly identified opportunities for improvement across each category: Software Engineering, Algorithms & Data Structures, and Databases.</p>
-      <p>As documented in my code review video and accompanying journal, I used tools such as OBS Studio to visually demonstrate the deficiencies and enhancements of each code artifact. In addition to discussing software practices like Object-Oriented Programming, Test-Driven Development, and efficiency improvements, I reviewed the artifacts in terms of functionality, readability, maintainability, and performance.</p>
-      <p>The accompanying journals describe the significance of code review as an industry practice and lay out best practices that I followed, such as conducting focused reviews of small code segments, setting clear expectations, and maintaining clean, well-commented codebases. This foundation allowed me to thoughtfully refactor and improve all artifacts in meaningful, measurable ways.</p>
-      <p><a href="https://github.com/thomasxvii/thomasxvii.github.io/blob/main/Journals/2-1%20Journal.docx" target="_blank">Code Review Journal</a></p>
-    <p><a href="https://github.com/thomasxvii/thomasxvii.github.io/blob/main/CS%20499/CS%20499%20Module%20One%20Assignment.docx" target="_blank">Enhancement Planning Document</a></p>
-    <iframe src="https://www.youtube.com/embed/ylHAz0zElCw" allowfullscreen></iframe>
+      <p>As a result of this journey, I am currently focused on pursuing opportunities in indie game development, software engineering, and front-end/mobile development. The reflections I captured in my weekly journals throughout the course offer further insight into my evolving mindset, challenges I overcame, and the lessons I’ve applied across various disciplines. These journals reflect on career goals, the importance of ePortfolios, emerging technology, and trends in computer science.</p>
   </section>
 
-    <section id="design-enhancement">
-    <h2>Software Design and Engineering Enhancement</h2>
-      <p>This artifact is the <strong>Appointment Service</strong> project originally created in CS 320. It began as a Java-based task-tracking app and evolved into a refactored Python application using OOP and robust unit testing with Pytest. This transition not only improved the readability and extensibility of the code but also introduced modern practices like exception handling and data validation. These changes increased its reliability and made it more professional in design.</p>
-      <p>The accompanying narrative explains my motivation for selecting this artifact and details the enhancement process, including the reorganization of class logic and the integration of test coverage for each method.</p>
-      <p>This enhancement focuses on the Appointment Service from CS 320. Originally written in Java, it was refactored into Python using object-oriented principles. Improvements include exception handling, modular design, and Pytest-based test coverage.</p>
-    <p><a href="https://github.com/thomasxvii/thomasxvii.github.io/tree/main/Original%20Artifacts/CS%20320/Appointment%20Service" target="_blank">Original Artifact</a> | <a href="https://github.com/thomasxvii/thomasxvii.github.io/tree/main/Enhanced%20Artifacts/ENHANCED%20CS%20320/Appointment%20Service" target="_blank">Enhanced Artifact</a> | <a href="https://github.com/thomasxvii/thomasxvii.github.io/blob/main/Narratives/3-2%20Milestone%20Two%20Narrative.docx" target="_blank">Narrative</a></p>
-    <img src="Screenshots/Artifact One - Before and After Code Comparison.png" alt="Artifact One Screenshot">
-  </section>
-
-    <section id="algorithm-enhancement">
-    <h2>Algorithms and Data Structure Enhancement</h2>
-      <p>The <strong>Contact Service</strong> project, also from CS 320, originally implemented a linear ArrayList for managing contacts. The enhanced version replaces this with a HashMap (dictionary), which allows for constant-time lookup, simplifies logic for updating and deleting records, and ensures data integrity through duplicate prevention and improved validation. These changes significantly boost performance and reduce redundancy.</p>
-      <p>Through this enhancement, I demonstrated the impact of appropriate data structure selection and algorithmic improvements in real-world development scenarios. The narrative included outlines these modifications and how they met the course outcomes for performance and structure.</p>
-      <p>This enhancement refactors the Contact Service by replacing a list-based structure with a Python dictionary to improve lookup efficiency. This change simplifies the logic and ensures scalability for contact management features.</p>
-    <p><a href="https://github.com/thomasxvii/thomasxvii.github.io/tree/main/Original%20Artifacts/CS%20320/Contact%20Service" target="_blank">Original Artifact</a> | <a href="https://github.com/thomasxvii/thomasxvii.github.io/tree/main/Enhanced%20Artifacts/ENHANCED%20CS%20320/Contact%20Service" target="_blank">Enhanced Artifact</a> | <a href="https://github.com/thomasxvii/thomasxvii.github.io/blob/main/Narratives/4-2%20Milestone%20Three%20Narrative.docx" target="_blank">Narrative</a></p>
-    <img src="Screenshots/Artifact Two - Contact Lookup Comparison.png" alt="Artifact Two Screenshot">
-  </section>
-
-    <section id="database-enhancement">
-    <h2>Databases Enhancement</h2>
-      <p>The <strong>Grazioso Salvare</strong> project, originally developed in IT 145, was enhanced by transitioning from flat file-based storage to a normalized SQLite relational database. This not only provided persistent storage but also introduced secure parameterized queries and a modular code structure that improved both functionality and scalability.</p>
-      <p>By creating modules such as <code>database.py</code>, <code>models.py</code>, and <code>main.py</code>, I adhered to separation of concerns and clean architecture principles. These updates reflect my grasp of secure and scalable data design and the importance of integrating database systems into real-world applications. The supporting narrative outlines the database schema design, security considerations, and testing practices.</p>
-      <p>This project is a refactor of the Grazioso Salvare CLI app from IT 145. It now includes SQLite integration for persistent storage, structured queries, and normalized schema design for efficient data retrieval and security.</p>
-    <p><a href="https://github.com/thomasxvii/thomasxvii.github.io/tree/main/Original%20Artifacts/IT%20145/GraziosoSalvare" target="_blank">Original Artifact</a> | <a href="https://github.com/thomasxvii/thomasxvii.github.io/tree/main/Enhanced%20Artifacts/ENHANCED%20IT%20145" target="_blank">Enhanced Artifact</a> | <a href="https://github.com/thomasxvii/thomasxvii.github.io/blob/main/Narratives/5-2%20Milestone%20Four%20Narrative.docx" target="_blank">Narrative</a></p>
-    <img src="Screenshots/Artifact Three - GraziosoSalvare Conversion.png" alt="Artifact Three Screenshot">
-  </section>
-
-     <section id="journals">
+  <section id="journals">
     <h2>Journals</h2>
     <p>These journals provide context and insight into my professional development and reflection throughout the ePortfolio course. Topics include the importance of showcasing your work, evaluating career goals, analyzing current industry trends, and exploring emerging technologies.</p>
     <ul>
@@ -157,6 +153,43 @@
       <li><a href="https://github.com/thomasxvii/thomasxvii.github.io/blob/main/Journals/6-1%20Journal.docx" target="_blank">Journal: Emerging Technology</a></li>
     </ul>
   </section>
+
+  <section id="code-review">
+    <h2>Code Review & Enhancement Plan</h2>
+      <p>My code review process provided the foundation for thoughtful artifact enhancements. This began with the development of an <a href="https://github.com/thomasxvii/thomasxvii.github.io/blob/main/CS%20499/CS%20499%20Module%20One%20Assignment.docx" target="_blank">enhancement plan</a> that clearly identified opportunities for improvement across each category: Software Engineering, Algorithms & Data Structures, and Databases.</p>
+      <iframe src="https://www.youtube.com/embed/ylHAz0zElCw" allowfullscreen></iframe>
+      <p>As documented in my code review video and accompanying journal, I used a code review checklist to visually demonstrate the deficiencies and enhancements of each code artifact. In addition to discussing software practices like Object-Oriented Programming, Test-Driven Development, and efficiency improvements, I reviewed the artifacts in terms of functionality, readability, maintainability, and performance.</p>
+      <p><a href="https://github.com/thomasxvii/thomasxvii.github.io/blob/main/Journals/2-1%20Journal.docx" target="_blank">Code Review Journal</a></p>
+      <p>The accompanying journals describe the significance of code review as an industry practice and lay out best practices that I followed, such as conducting focused reviews of small code segments, setting clear expectations, and maintaining clean, well-commented codebases. This foundation allowed me to thoughtfully refactor and improve all artifacts in meaningful, measurable ways.</p>
+  </section>
+
+  <section id="design-enhancement">
+    <h2>Software Design and Engineering Enhancement</h2>
+      <p>This artifact is the <strong>Appointment Service</strong> project originally created in CS 320. It began as a Java-based task-tracking app and evolved into a refactored Python application using OOP and robust unit testing with Pytest. This transition not only improved the readability and extensibility of the code but also introduced modern practices like exception handling and data validation. These changes increased its reliability and made it more professional in design.</p>
+      <img src="Screenshots/Artifact One - Before and After Code Comparison.png" alt="Artifact One Screenshot">
+      <p>The accompanying narrative explains my motivation for selecting this artifact and details the enhancement process, including the reorganization of class logic and the integration of test coverage for each method.</p>
+      <p>This enhancement focuses on the Appointment Service from CS 320. Originally written in Java, it was refactored into Python using object-oriented principles. Improvements include exception handling, modular design, and Pytest-based test coverage.</p>
+    <p><a href="https://github.com/thomasxvii/thomasxvii.github.io/tree/main/Original%20Artifacts/CS%20320/Appointment%20Service" target="_blank">Original Artifact</a> | <a href="https://github.com/thomasxvii/thomasxvii.github.io/tree/main/Enhanced%20Artifacts/ENHANCED%20CS%20320/Appointment%20Service" target="_blank">Enhanced Artifact</a> | <a href="https://github.com/thomasxvii/thomasxvii.github.io/blob/main/Narratives/3-2%20Milestone%20Two%20Narrative.docx" target="_blank">Narrative</a></p>
+  </section>
+
+  <section id="algorithm-enhancement">
+    <h2>Algorithms and Data Structure Enhancement</h2>
+      <p>The <strong>Contact Service</strong> project, also from CS 320, originally implemented a linear ArrayList for managing contacts. The enhanced version replaces this with a HashMap (dictionary), which allows for constant-time lookup, simplifies logic for updating and deleting records, and ensures data integrity through duplicate prevention and improved validation. These changes significantly boost performance and reduce redundancy.</p>
+      <img src="Screenshots/Artifact Two - Contact Lookup Comparison.png" alt="Artifact Two Screenshot">
+      <p>Through this enhancement, I demonstrated the impact of appropriate data structure selection and algorithmic improvements in real-world development scenarios. The narrative included outlines these modifications and how they met the course outcomes for performance and structure.</p>
+      <p>This enhancement refactors the Contact Service by replacing a list-based structure with a Python dictionary to improve lookup efficiency. This change simplifies the logic and ensures scalability for contact management features.</p>
+    <p><a href="https://github.com/thomasxvii/thomasxvii.github.io/tree/main/Original%20Artifacts/CS%20320/Contact%20Service" target="_blank">Original Artifact</a> | <a href="https://github.com/thomasxvii/thomasxvii.github.io/tree/main/Enhanced%20Artifacts/ENHANCED%20CS%20320/Contact%20Service" target="_blank">Enhanced Artifact</a> | <a href="https://github.com/thomasxvii/thomasxvii.github.io/blob/main/Narratives/4-2%20Milestone%20Three%20Narrative.docx" target="_blank">Narrative</a></p>
+  </section>
+
+  <section id="database-enhancement">
+    <h2>Databases Enhancement</h2>
+      <p>The <strong>Grazioso Salvare</strong> project, originally developed in IT 145, was enhanced by transitioning from flat file-based storage to a normalized SQLite relational database. This not only provided persistent storage but also introduced secure parameterized queries and a modular code structure that improved both functionality and scalability.</p>
+      <img src="Screenshots/Artifact Three - GraziosoSalvare Conversion.png" alt="Artifact Three Screenshot">
+      <p>By creating modules such as <code>database.py</code>, <code>models.py</code>, and <code>main.py</code>, I adhered to separation of concerns and clean architecture principles. These updates reflect my grasp of secure and scalable data design and the importance of integrating database systems into real-world applications. The supporting narrative outlines the database schema design, security considerations, and testing practices.</p>
+      <p>This project is a refactor of the Grazioso Salvare CLI app from IT 145. It now includes SQLite integration for persistent storage, structured queries, and normalized schema design for efficient data retrieval and security.</p>
+    <p><a href="https://github.com/thomasxvii/thomasxvii.github.io/tree/main/Original%20Artifacts/IT%20145/GraziosoSalvare" target="_blank">Original Artifact</a> | <a href="https://github.com/thomasxvii/thomasxvii.github.io/tree/main/Enhanced%20Artifacts/ENHANCED%20IT%20145" target="_blank">Enhanced Artifact</a> | <a href="https://github.com/thomasxvii/thomasxvii.github.io/blob/main/Narratives/5-2%20Milestone%20Four%20Narrative.docx" target="_blank">Narrative</a></p>
+  </section>
+
   </div>
   
   <footer>
